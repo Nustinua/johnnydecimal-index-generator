@@ -130,9 +130,14 @@
   .jd-cat.is-dragging {
     filter: grayscale(0.9) opacity(0.5) contrast(0.75) brightness(1.25);
   }
-  :global(.jd-cat#dnd-action-dragged-el, .jd-thing#dnd-action-dragged-el) {
-    @apply bg-ejd-surfaceHover border-none focus:outline-black !important;
+  :global(.jd-cat#dnd-action-dragged-el) {
+  @apply bg-ejd-surfaceHover border-none focus:outline-black !important;
   }
+
+  :global(.jd-thing#dnd-action-dragged-el) {
+  @apply bg-ejd-surfaceHover border-none focus:outline-black !important;
+  }
+
   /** Customize area height */
   @media (min-width: 640px) {
     .jd-area {
